@@ -1,21 +1,8 @@
-> :information_source: This repository has been deprecated in favor of the [Substrate Node Template](https://github.com/substrate-developer-hub/substrate-node-template).
-> 
-> You can still create your own custom pallets in their own crate by extracting the [`/pallet/template/`](https://github.com/substrate-developer-hub/substrate-node-template/tree/master/pallets/template) folder of the `substrate-node-template` project.
-
-
-# Substrate Pallet Template
-
-This is a template for a Substrate pallet which lives as its own crate so it can be imported into multiple runtimes. It is based on the ["template" pallet](https://github.com/paritytech/substrate/tree/master/bin/node-template/pallets/template) that is included with the [Substrate node template](https://github.com/paritytech/substrate/tree/master/bin/node-template).
-
-Check out the [HOWTO](HOWTO.md) to learn how to use this for your own runtime module.
-
-This README should act as a general template for distributing your pallet to others.
+# Substrate Identity Pallet
 
 ## Purpose
 
-This pallet acts as a template for building other pallets.
-
-It currently allows a user to put a `u32` value into storage, which triggers a runtime event.
+Basic custom pallet construction.
 
 ## Dependencies
 
@@ -36,7 +23,7 @@ To add this pallet to your runtime, simply include the following to your runtime
 ```TOML
 [dependencies.pallet-template]
 default_features = false
-git = 'https://github.com/substrate-developer-hub/substrate-pallet-template.git'
+git = 'https://github.com/czareko/pallet-identity.git'
 ```
 
 and update your runtime's `std` feature to include this pallet:
@@ -44,7 +31,7 @@ and update your runtime's `std` feature to include this pallet:
 ```TOML
 std = [
     # --snip--
-    'pallet-template/std',
+    'pallet-identity/std',
 ]
 ```
 

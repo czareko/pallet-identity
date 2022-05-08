@@ -1,6 +1,6 @@
 [package]
-authors = ['Substrate DevHub <https://github.com/substrate-developer-hub>']
-description = 'FRAME pallet template for defining custom runtime logic.'
+authors = ['Cezary Olborski <https://github.com/czareko>']
+description = 'FRAME pallet identity - tutorial test'
 edition = '2018'
 homepage = 'https://substrate.dev'
 license = 'Unlicense'
